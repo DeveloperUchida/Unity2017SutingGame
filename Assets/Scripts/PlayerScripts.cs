@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerScripts : MonoBehaviour {
 
@@ -21,6 +19,8 @@ public class PlayerScripts : MonoBehaviour {
 		if (Input.GetKey (KeyCode.S)) {
 			transform.Translate (0, 0, -PlayerSpped);
 		}
-
+		if (Input.GetKey (KeyCode.D)) {
+			transform.Translate (PlayerSpped, 0, 0);
+		}
 	}
 }
